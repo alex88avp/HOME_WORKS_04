@@ -13,12 +13,12 @@ int b = Convert.ToInt32(Console.ReadLine());
 int Degree(int a, int b)
 {
     int count = 0;
+    int result = a;
     while(count < b)
     {
-        int result = a * a;
+        result*= a;
         count++;
-        return result;
     }
-    return count;
+    return result;
 }
 Console.WriteLine($"Число {a}, возведённое в степень {b} является числом {Degree(a, b)}");
